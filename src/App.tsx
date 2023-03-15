@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react'
 import { Button, Form, Modal, Upload } from 'antd'
 import axios, { Axios, AxiosPromise } from 'axios'
 import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
+import file from '../src/assets/http___127.0.0.1_5555_uploads_Vicky_Shipton_-_London (1).pdf'
+
 
 function App() {
 const [form] = Form.useForm()
@@ -32,8 +34,12 @@ useEffect(() =>{
 
 console.log(resData);
 
+
+// you must put the address of the file coming from the server
+
 const docs = [
-   { uri: "http://127.0.0.1:5555/uploads/Vicky_Shipton_-_London (1).pdf" }, // Remote file
+  //  { uri: "http://127.0.0.1:5555/uploads/Vicky_Shipton_-_London (1).pdf" }, // Remote file
+   { uri: `${file}` }, // Local File
 ];
 
 
