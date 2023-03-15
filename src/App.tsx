@@ -57,9 +57,8 @@ const handleCancel = () => {
       </Button>
       <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
         <p>Some contents...</p>
-        <DocViewer documents={docs} pluginRenderers={DocViewerRenderers} />;
+        <DocViewer documents={docs} pluginRenderers={DocViewerRenderers} />
       </Modal>
-
  </div> 
     )
 }
